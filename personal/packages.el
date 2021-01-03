@@ -1,8 +1,9 @@
 (setq prelude-flyspell nil)
 
-(prelude-require-packages '(iedit multiple-cursors elpher))
+(prelude-require-packages '(iedit multiple-cursors elpher flycheck-clj-kondo))
 (require 'iedit)
 (require 'multiple-cursors)
+(require 'flycheck-clj-kondo)
 
 (setq browse-url-browser-function 'eww-browse-url)
 
