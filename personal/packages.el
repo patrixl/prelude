@@ -1,6 +1,7 @@
 (setq prelude-flyspell nil)
 
-(prelude-require-packages '(iedit multiple-cursors elpher flycheck-clj-kondo))
+(prelude-require-packages '(iedit multiple-cursors elpher flycheck-clj-kondo
+                                  neotree))
 (require 'iedit)
 (require 'multiple-cursors)
 (require 'flycheck-clj-kondo)
