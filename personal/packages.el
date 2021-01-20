@@ -1,7 +1,7 @@
 (setq prelude-flyspell nil)
 
 (prelude-require-packages '(iedit multiple-cursors elpher flycheck-clj-kondo
-                                  neotree))
+                                  neotree jenkinsfile-mode))
 (require 'iedit)
 (require 'multiple-cursors)
 (require 'flycheck-clj-kondo)
@@ -17,3 +17,6 @@
 	 (require 'elpher)
 	 (elpher-go url))
 	(t (funcall original url new-window))))
+
+
+(remove-hook 'file-name-at-point-functions 'ffap-guess-file-name-at-point)
