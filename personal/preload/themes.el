@@ -1,2 +1,2 @@
 ;; (setq prelude-theme 'doom-monokai-pro)
-(setq prelude-theme 'doom-one)
+(setq prelude-theme 'doom-solarized-light)
