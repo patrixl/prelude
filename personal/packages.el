@@ -1,7 +1,8 @@
 (setq prelude-flyspell nil)
 
 (prelude-require-packages '(iedit multiple-cursors elpher flycheck-clj-kondo
-                                  neotree jenkinsfile-mode docker-tramp))
+                                  neotree jenkinsfile-mode docker-tramp
+                                  modus-themes))
 (require 'iedit)
 (require 'multiple-cursors)
 (require 'flycheck-clj-kondo)
