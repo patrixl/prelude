@@ -5,4 +5,4 @@
 
 ;;(setq prelude-theme 'modus-vivendi)
 
-(setq prelude-theme 'doom-solarized-light)
+(setq prelude-theme 'doom-one-light)

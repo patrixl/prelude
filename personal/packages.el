@@ -1,7 +1,8 @@
 (setq prelude-flyspell nil)
 
 (prelude-require-packages '(iedit multiple-cursors elpher flycheck-clj-kondo
-                                  neotree jenkinsfile-mode docker-tramp doom-themes))
+                                  neotree jenkinsfile-mode docker-tramp doom-themes
+                                  elfeed))
 
 (setq browse-url-browser-function 'eww-browse-url)
 
@@ -17,3 +18,6 @@
 
 
 (remove-hook 'file-name-at-point-functions 'ffap-guess-file-name-at-point)
+
+(with-eval-after-load 'cider
+  (add-to-list 'cider-jack-in-nrepl-middlewares "shadow.cljs.devtools.server.nrepl/middleware"))
